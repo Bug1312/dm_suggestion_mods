@@ -1,0 +1,40 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:emerald"
+    },
+    "title": {
+      "translate": "advancements.dm_suggestion_1.trade_with_psychic_paper.title"
+    },
+    "description": {
+      "translate": "advancements.dm_suggestion_1.trade_with_psychic_paper.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "dm_suggestion_1:obtain_psychic_paper",
+  "criteria": {
+    "trade_with_psychic_paper": {
+      "trigger": "minecraft:villager_trade",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "nbt": "{Inventory:[{id:\"dm_suggestion_1:psychic_paper\"}]}"
+            }
+          }
+        ],
+        "villager": []
+      }
+    }
+  },
+  "requirements": [
+    [
+      "trade_with_psychic_paper"
+    ]
+  ]
+}

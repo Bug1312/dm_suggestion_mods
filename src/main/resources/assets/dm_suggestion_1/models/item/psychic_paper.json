@@ -1,0 +1,66 @@
+{
+	"credit": "Made by ranafangirl",
+	"textures": {
+		"0": "dm_suggestion_1:item/psychic_paper_tx"
+	},
+	"elements": [
+		{
+			"from": [5.5, 6.5, 7.5],
+			"to": [10.5, 9.5, 8],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 6, 8]},
+			"faces": {
+				"north": {"uv": [6, 0, 12, 4], "texture": "#0"},
+				"east": {"uv": [6, 0, 7, 4], "texture": "#0"},
+				"west": {"uv": [6, 0, 7, 4], "texture": "#0"},
+				"up": {"uv": [6, 0, 12, 1], "texture": "#0"},
+				"down": {"uv": [6, 3, 12, 4], "texture": "#0"}
+			}
+		},
+		{
+			"from": [5, 6, 8],
+			"to": [11, 10, 8],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 6, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 6, 4], "texture": "#0"},
+				"south": {"uv": [0, 0, 6, 4], "texture": "#0"}
+			}
+		},
+		{
+			"from": [5, 2, 8],
+			"to": [11, 6, 8],
+			"rotation": {"angle": 45, "axis": "x", "origin": [8, 6, 8]},
+			"faces": {
+				"north": {"uv": [0, 4, 6, 8], "texture": "#0"},
+				"south": {"uv": [0, 4, 6, 8], "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"firstperson_righthand": {
+			"rotation": [4.8, 16.06, -16.93],
+			"translation": [3, 3.25, 0],
+			"scale": [1.5, 1.5, 1.5]
+		},
+		"firstperson_lefthand": {
+			"rotation": [4.8, 16.06, -16.93],
+			"translation": [3, 3.25, 0],
+			"scale": [1.5, 1.5, 1.5]
+		},
+		"ground": {
+			"translation": [0, 2, 0],
+			"scale": [0.5, 0.5, 0.5]
+		},
+		"gui": {
+			"rotation": [169.24, 26.81, -157.16],
+			"translation": [2.25, 2.25, 0],
+			"scale": [2, 2, 2]
+		},
+		"head": {
+			"translation": [0, -3.25, -5.25],
+			"scale": [2, 2, 2]
+		},
+		"fixed": {
+			"scale": [0.5, 0.5, 0.5]
+		}
+	}
+}

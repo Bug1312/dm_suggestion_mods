@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:paper"
+    },
+    {
+      "item": "minecraft:leather"
+    },
+    {
+      "tag": "dalekmod:artron"
+    }
+  ],
+  "result": {
+    "item": "dm_suggestion_1:psychic_paper",
+    "count": 1
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "display": {
+    "icon": {
+      "item": "dm_suggestion_1:psychic_paper"
+    },
+    "title": {
+      "translate": "advancements.dm_suggestion_1.obtain_psychic_paper.title"
+    },
+    "description": {
+      "translate": "advancements.dm_suggestion_1.obtain_psychic_paper.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "dalekmod:obtain_artron",
+  "criteria": {
+    "obtain_psychic_paper": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "dm_suggestion_1:psychic_paper"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "obtain_psychic_paper"
+    ]
+  ]
+}
