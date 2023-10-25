@@ -1,0 +1,11 @@
+{
+	"tooltip.dm_suggestion_7.call_tardis": "Call TARDIS",
+	"tooltip.dm_suggestion_7.answer_phone": "Answer Phone",
+
+	"gui.dm_suggestion_7.call.title": "TARDIS Call List",
+	"gui.dm_suggestion_7.call.none_found": "No TARDISes found",
+	"gui.dm_suggestion_7.call.call_tardis": "Call %s's TARDIS",
+	"gui.dm_suggestion_7.call.call_button": "Call TARDIS",
+
+	"subtitles.player.ringtone": "Phone rings"
+}

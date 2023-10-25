@@ -1,0 +1,9 @@
+{
+	"player.ringtone":{
+		"category":"block",
+		"subtitle":"subtitles.player.ringtone",
+		"sounds":[
+			{ "name":"dm_suggestion_7:player/ringtone", "stream":false }
+		]
+	}
+}
