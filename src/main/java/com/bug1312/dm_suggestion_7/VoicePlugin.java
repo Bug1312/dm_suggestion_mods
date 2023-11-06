@@ -10,6 +10,8 @@ import java.util.UUID;
 
 import javax.annotation.Nullable;
 
+import com.bug1312.dm_suggestion_7.network.PacketSendRemoveCall;
+
 import de.maxhenkel.voicechat.api.ForgeVoicechatPlugin;
 import de.maxhenkel.voicechat.api.Group;
 import de.maxhenkel.voicechat.api.VoicechatApi;
@@ -21,7 +23,6 @@ import de.maxhenkel.voicechat.api.events.EventRegistration;
 import de.maxhenkel.voicechat.api.events.RemoveGroupEvent;
 import de.maxhenkel.voicechat.api.events.VoicechatServerStartedEvent;
 import net.minecraftforge.fml.network.PacketDistributor;
-import network.PacketSendRemoveCall;
 
 @ForgeVoicechatPlugin
 public class VoicePlugin implements VoicechatPlugin {

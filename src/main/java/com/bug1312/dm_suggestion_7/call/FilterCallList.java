@@ -10,6 +10,7 @@ import java.util.function.Supplier;
 
 import javax.annotation.Nullable;
 
+import com.bug1312.dm_suggestion_7.network.CallInfo;
 import com.google.common.collect.Lists;
 import com.mojang.authlib.GameProfile;
 import com.mojang.authlib.minecraft.MinecraftProfileTexture;
@@ -26,7 +27,6 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.math.BlockPos;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
-import network.CallInfo;
 
 @OnlyIn(Dist.CLIENT)
 public class FilterCallList extends AbstractOptionList<FilterCallListEntry> {

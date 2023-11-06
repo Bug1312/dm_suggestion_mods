@@ -1,7 +1,7 @@
 # Dalek Mod Suggestion #7
 
 ![Suggestion #7](https://img.shields.io/badge/suggestion-7-blue)
-![GitHub mod downloads](https://img.shields.io/github/downloads/bug1312/dm_suggestion_mods/v1.0.0%2B7/total?label=downloads)
+![GitHub mod downloads](https://img.shields.io/github/downloads/bug1312/dm_suggestion_mods/v2.0.0%2B7/total?label=downloads)
 ![GitHub Repo stars](https://img.shields.io/github/stars/bug1312/dm_suggestion_mods)
 
 ## TARDIS Phone Calls

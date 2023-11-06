@@ -9,6 +9,7 @@ import java.util.function.Supplier;
 import javax.annotation.Nullable;
 
 import com.bug1312.dm_suggestion_7.ModMain;
+import com.bug1312.dm_suggestion_7.network.PacketRequestCall;
 import com.google.common.collect.ImmutableList;
 import com.mojang.blaze3d.matrix.MatrixStack;
 import com.mojang.blaze3d.systems.RenderSystem;
@@ -28,7 +29,6 @@ import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.TranslationTextComponent;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
-import network.PacketRequestCall;
 
 @OnlyIn(Dist.CLIENT)
 public class FilterCallListEntry extends AbstractOptionList.Entry<FilterCallListEntry> {

@@ -3,7 +3,7 @@ loaderVersion="[30,)"
 license="LGPL-3.0-only"
 [[mods]]
 modId="dm_suggestion_7"
-version="1.0.0"
+version="2.0.0"
 displayName="DM Suggestion #7"
 displayURL="https://github.com/Bug1312/dm_suggestion_mods/tree/mod/7"
 authors="Bug1312"

@@ -2,6 +2,13 @@
 
 package com.bug1312.dm_suggestion_7;
 
+import com.bug1312.dm_suggestion_7.network.PacketRequestCall;
+import com.bug1312.dm_suggestion_7.network.PacketRequestCallable;
+import com.bug1312.dm_suggestion_7.network.PacketSendActiveCalls;
+import com.bug1312.dm_suggestion_7.network.PacketSendAddCall;
+import com.bug1312.dm_suggestion_7.network.PacketSendCallable;
+import com.bug1312.dm_suggestion_7.network.PacketSendRemoveCall;
+
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.api.distmarker.Dist;
@@ -15,12 +22,6 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.fml.network.NetworkRegistry;
 import net.minecraftforge.fml.network.PacketDistributor;
 import net.minecraftforge.fml.network.simple.SimpleChannel;
-import network.PacketRequestCall;
-import network.PacketRequestCallable;
-import network.PacketSendActiveCalls;
-import network.PacketSendAddCall;
-import network.PacketSendCallable;
-import network.PacketSendRemoveCall;
 
 @Mod(ModMain.MOD_ID)
 public class ModMain {

@@ -5,6 +5,8 @@ package com.bug1312.dm_suggestion_7.call;
 import java.util.Locale;
 
 import com.bug1312.dm_suggestion_7.ModMain;
+import com.bug1312.dm_suggestion_7.network.CallInfo;
+import com.bug1312.dm_suggestion_7.network.PacketRequestCallable;
 import com.mojang.blaze3d.matrix.MatrixStack;
 
 import net.minecraft.client.Minecraft;
@@ -17,8 +19,6 @@ import net.minecraft.util.text.TextFormatting;
 import net.minecraft.util.text.TranslationTextComponent;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
-import network.CallInfo;
-import network.PacketRequestCallable;
 
 @OnlyIn(Dist.CLIENT)
 public class CallScreen extends Screen {
