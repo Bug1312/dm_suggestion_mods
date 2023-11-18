@@ -1,0 +1,22 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"DID",
+		"IXI",
+		"DID"
+	],
+	"key": {
+		"D": {
+			"item": "minecraft:blue_dye"
+		},
+		"I": {
+			"item": "minecraft:iron_ingot"
+		},
+		"X": {
+			"item": "dalekmod:data_writer"
+		}
+	},
+	"result": {
+		"item": "dm_suggestion_354:copier"
+	}
+}

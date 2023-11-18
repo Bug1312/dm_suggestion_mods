@@ -1,0 +1,18 @@
+{
+	"multipart": [
+		{ "when": { "facing": "north" }, "apply": { "model": "dm_suggestion_354:block/copier", "y": 0 } },
+		{ "when": { "facing": "south" }, "apply": { "model": "dm_suggestion_354:block/copier", "y": 180 } },
+		{ "when": { "facing": "west" }, "apply": { "model": "dm_suggestion_354:block/copier", "y": 270 } },
+		{ "when": { "facing": "east" }, "apply": { "model": "dm_suggestion_354:block/copier", "y": 90 } },
+
+		{ "when": { "facing": "north", "cartridge": "1" }, "apply": { "model": "dm_suggestion_354:block/copier_module", "y": 0 } },
+		{ "when": { "facing": "south", "cartridge": "1" }, "apply": { "model": "dm_suggestion_354:block/copier_module", "y": 180 } },
+		{ "when": { "facing": "west", "cartridge": "1" }, "apply": { "model": "dm_suggestion_354:block/copier_module", "y": 270 } },
+		{ "when": { "facing": "east", "cartridge": "1" }, "apply": { "model": "dm_suggestion_354:block/copier_module", "y": 90 } },
+
+		{ "when": { "facing": "north", "cartridge": "2" }, "apply": { "model": "dm_suggestion_354:block/copier_module_gold", "y": 0 } },
+		{ "when": { "facing": "south", "cartridge": "2" }, "apply": { "model": "dm_suggestion_354:block/copier_module_gold", "y": 180 } },
+		{ "when": { "facing": "west", "cartridge": "2" }, "apply": { "model": "dm_suggestion_354:block/copier_module_gold", "y": 270 } },
+		{ "when": { "facing": "east", "cartridge": "2" }, "apply": { "model": "dm_suggestion_354:block/copier_module_gold", "y": 90 } }
+	]
+}
