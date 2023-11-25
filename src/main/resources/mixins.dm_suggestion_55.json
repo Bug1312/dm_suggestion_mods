@@ -1,0 +1,9 @@
+{
+	"compatibilityLevel": "JAVA_8",
+	"minVersion": "0.7.10",
+	"package": "com.bug1312.dm_suggestion_55.mixins",
+	"refmap": "mixins.dm_suggestion_55.refmap.json",
+	"required": true,
+	"mixins": ["GunItemMixin"],
+	"client": ["OverlayGunChargeupMixin"]
+}

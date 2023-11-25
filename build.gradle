@@ -14,8 +14,8 @@ apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
 version = "${project.property('version')}"
-group = 'com.bug1312.dm_suggestion_{#NUMBER}'
-archivesBaseName = 'dm_suggestion_{#NUMBER}'
+group = 'com.bug1312.dm_suggestion_55'
+archivesBaseName = 'dm_suggestion_55'
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(8)
 
@@ -31,7 +31,7 @@ minecraft {
 			property 'forge.logging.console.level', 'debug'
 
 			mods {
-				dm_suggestion_{#NUMBER} {
+				dm_suggestion_55 {
 					source sourceSets.main
 				}
 			}
@@ -59,14 +59,14 @@ dependencies {
 }
 
 mixin {
-	add sourceSets.main, 'mixins.dm_suggestion_{#NUMBER}.refmap.json'
-	config 'mixins.dm_suggestion_{#NUMBER}.json'
+	add sourceSets.main, 'mixins.dm_suggestion_55.refmap.json'
+	config 'mixins.dm_suggestion_55.json'
 }
 
 jar {
 	manifest {
 		attributes([
-			"Specification-Title": "dm_suggestion_{#NUMBER}",
+			"Specification-Title": "dm_suggestion_55",
 			"Specification-Vendor": "bug1312",
 			"Specification-Version": "${version}",
 			"Implementation-Title": project.jar.baseName,
