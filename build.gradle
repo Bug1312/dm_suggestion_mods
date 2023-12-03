@@ -14,8 +14,8 @@ apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
 version = "${project.property('version')}"
-group = 'com.bug1312.dm_suggestion_{#NUMBER}'
-archivesBaseName = 'dm_suggestion_{#NUMBER}'
+group = 'com.bug1312.dm_suggestion_260'
+archivesBaseName = 'dm_suggestion_260'
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(8)
 
@@ -23,6 +23,7 @@ println('Java: ' + System.getProperty('java.version') + ' JVM: ' + System.getPro
 
 minecraft {
 	mappings channel: 'official', version: '1.16.5'
+	accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg')
 
 	runs {
 		client {
@@ -31,7 +32,7 @@ minecraft {
 			property 'forge.logging.console.level', 'debug'
 
 			mods {
-				dm_suggestion_{#NUMBER} {
+				dm_suggestion_260 {
 					source sourceSets.main
 				}
 			}
@@ -59,14 +60,14 @@ dependencies {
 }
 
 mixin {
-	add sourceSets.main, 'mixins.dm_suggestion_{#NUMBER}.refmap.json'
-	config 'mixins.dm_suggestion_{#NUMBER}.json'
+	add sourceSets.main, 'mixins.dm_suggestion_260.refmap.json'
+	config 'mixins.dm_suggestion_260.json'
 }
 
 jar {
 	manifest {
 		attributes([
-			"Specification-Title": "dm_suggestion_{#NUMBER}",
+			"Specification-Title": "dm_suggestion_260",
 			"Specification-Vendor": "bug1312",
 			"Specification-Version": "${version}",
 			"Implementation-Title": project.jar.baseName,
