@@ -1,0 +1,44 @@
+{
+	"effects": {
+		"sky_color": 9950719,
+		"fog_color": 16777215,
+		"water_color": 22015,
+		"water_fog_color": 329011
+	},
+	"carvers": {
+		"air": [
+			"dalekmod:classic_carver"
+		]
+	},
+	"starts": [],
+	"features": [
+		["dalekmod:classic_trees"],
+		["dalekmod:classic_flowers_red","dalekmod:classic_flowers_yellow", "dm_suggestion_74:classic_flowers_blue"],
+		["dalekmod:classic_lake", "dalekmod:classic_sand_patch"],
+		[],
+		[],
+		[],
+		[],
+		[],
+		[],
+		[]
+	],
+	"spawners": {
+		"ambient": [],
+		"creature": [],
+		"misc": [],
+		"monster": [],
+		"water_ambient": [],
+		"water_creature": []
+	},
+	"category": "plains",
+	"precipitation": "none",
+	"surface_builder": "dalekmod:classic_sb",
+	"scale": 0.2,
+	"downfall": 0.0,
+	"depth": 0.8,
+	"temperature": 2,
+	"player_spawn_friendly": true,
+	"spawn_costs": {},
+	"creature_spawn_probability": 0.4
+}
