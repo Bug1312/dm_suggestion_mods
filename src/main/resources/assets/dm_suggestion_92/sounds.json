@@ -1,0 +1,9 @@
+{
+	"player.beep":{
+		"category":"player",
+		"subtitle":"subtitles.dm_suggestion_92.player.beep",
+		"sounds":[
+			{ "name":"dm_suggestion_92:player/beep", "stream":false }
+		]
+	}
+}
