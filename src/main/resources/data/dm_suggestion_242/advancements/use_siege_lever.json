@@ -1,0 +1,39 @@
+{
+	"display": {
+		"icon": {
+			"item": "dm_suggestion_242:siege_mode_cube"
+		},
+		"title": {
+			"translate": "advancements.dm_suggestion_242.active_siege_lever.title"
+		},
+		"description": {
+			"translate": "advancements.dm_suggestion_242.active_siege_lever.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"parent": "dalekmod:enter_tardis",
+	"criteria": {
+		"active_siege_lever": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"biome": "dalekmod:tardis",
+					"block": {
+						"block": "dm_suggestion_242:siege_lever",
+						"state": {
+							"powered": true
+						}
+					}
+				}
+			}
+		}
+	},
+	"requirements": [
+		[
+			"active_siege_lever"
+		]
+	]
+}

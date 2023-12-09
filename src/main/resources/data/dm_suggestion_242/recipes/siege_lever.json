@@ -1,0 +1,26 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		" G ",
+		"CLC",
+		"SSS"
+	],
+	"key": {
+		"L": {
+			"item": "minecraft:lever"
+		},
+		"G": {
+			"item": "minecraft:glass"
+		},
+		"C": {
+			"tag": "forge:circuits/basic"
+		},
+		"S": {
+			"item": "minecraft:stone"
+		}
+	},
+	"result": {
+		"item": "dm_suggestion_242:siege_lever",
+		"count": 1
+	}
+}

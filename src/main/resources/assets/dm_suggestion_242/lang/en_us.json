@@ -1,0 +1,9 @@
+{
+	"block.dm_suggestion_242.siege_lever": "Siege Mode Switch",
+	"block.dm_suggestion_242.siege_mode_cube": "Siege Mode TARDIS",
+
+	"notice.dm_suggestion_242.siege_error": "You cannot use this while the TARDIS is in Siege Mode",
+
+	"advancements.dm_suggestion_242.active_siege_lever.title": "Are you tiny in there?",
+	"advancements.dm_suggestion_242.active_siege_lever.description": "Activate Siege Mode within the TARDIS"
+}

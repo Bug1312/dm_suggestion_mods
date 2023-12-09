@@ -1,0 +1,18 @@
+{
+	"compatibilityLevel": "JAVA_8",
+	"minVersion": "0.7.10",
+	"package": "com.bug1312.dm_suggestion_242.mixins",
+	"refmap": "mixins.dm_suggestion_242.refmap.json",
+	"required": true,
+	"mixins": [
+		"minecraft.ItemEntityMixin", 
+		"minecraft.ContainerMixin", 
+		"minecraft.HopperTileEntityMixin", 
+		"dalekmod.TardisTileEntityMixin",
+		"dalekmod.TardisDataMixin",
+		"dalekmod.TardisActionListMixin",
+		"dalekmod.StattenheimRemoteItemMixin",
+		"dalekmod.disable.DisableBlocks",
+		"dalekmod.disable.DisableHitboxTile"
+	]
+}
