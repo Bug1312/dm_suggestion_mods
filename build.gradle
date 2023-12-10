@@ -5,17 +5,15 @@ buildscript {
 	}
 	dependencies {
 		classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '5.1.+', changing: true
-		classpath 'org.spongepowered:mixingradle:0.7.+'
 	}
 }
 apply plugin: 'net.minecraftforge.gradle'
-apply plugin: 'org.spongepowered.mixin'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
 version = "${project.property('version')}"
-group = 'com.bug1312.dm_suggestion_{#NUMBER}'
-archivesBaseName = 'dm_suggestion_{#NUMBER}'
+group = 'com.bug1312.dm_suggestion_122'
+archivesBaseName = 'dm_suggestion_122'
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(8)
 
@@ -31,7 +29,7 @@ minecraft {
 			property 'forge.logging.console.level', 'debug'
 
 			mods {
-				dm_suggestion_{#NUMBER} {
+				dm_suggestion_122 {
 					source sourceSets.main
 				}
 			}
@@ -55,18 +53,12 @@ dependencies {
 // 	implementation fg.deobf("curse.maven:the-dalek-mod-59654:3595382") // 65.0.1
 // 	implementation fg.deobf("curse.maven:the-dalek-mod-59654:3594060") // 65.0.0
 
-	annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
-}
-
-mixin {
-	add sourceSets.main, 'mixins.dm_suggestion_{#NUMBER}.refmap.json'
-	config 'mixins.dm_suggestion_{#NUMBER}.json'
 }
 
 jar {
 	manifest {
 		attributes([
-			"Specification-Title": "dm_suggestion_{#NUMBER}",
+			"Specification-Title": "dm_suggestion_122",
 			"Specification-Vendor": "bug1312",
 			"Specification-Version": "${version}",
 			"Implementation-Title": project.jar.baseName,
