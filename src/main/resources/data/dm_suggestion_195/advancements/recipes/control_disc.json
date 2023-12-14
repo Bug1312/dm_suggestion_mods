@@ -1,0 +1,32 @@
+{
+	"parent": "minecraft:recipes/root",
+	"criteria": {
+		"has_particle": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"tag": "dalekmod:artron"
+					}
+				]
+			}
+		},
+		"has_the_recipe": {
+			"trigger": "minecraft:recipe_unlocked",
+			"conditions": {
+				"recipe": "dm_suggestion_195:control_disc"
+			}
+		}
+	},
+	"requirements": [
+		[
+			"has_particle",
+			"has_the_recipe"
+		]
+	],
+	"rewards": {
+		"recipes": [
+			"dm_suggestion_195:control_disc"
+		]
+	}
+}

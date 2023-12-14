@@ -1,0 +1,8 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{"tag": "dalekmod:artron"},
+		{"tag": "forge:ingots/stainless_steel"}
+	],
+	"result": {"item": "dm_suggestion_195:control_disc"}
+}

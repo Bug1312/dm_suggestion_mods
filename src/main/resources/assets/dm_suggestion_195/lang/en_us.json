@@ -1,0 +1,5 @@
+{
+  "item.dm_suggestion_195.control_disc": "TARDIS Control Disc",
+  "notice.dm_suggestion_195.control_disc.linked": "Control Disc linked with TARDIS",
+  "tooltip.dm_suggestion_195.linked_id": "ID: %s"
+}
