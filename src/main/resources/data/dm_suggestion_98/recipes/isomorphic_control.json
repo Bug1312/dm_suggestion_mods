@@ -1,0 +1,26 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"SGS",
+		"GKG",
+		"CCC"
+	],
+	"key": {
+		"G": {
+			"item": "minecraft:glass"
+		},
+		"K": {
+			"tag": "dm_suggestion_98:tardis_keys"
+		},
+		"C": {
+			"item": "dalekmod:circuit"
+		},
+		"S": {
+			"item": "minecraft:stone"
+		}
+	},
+	"result": {
+		"item": "dm_suggestion_98:isomorphic_control",
+		"count": 1
+	}
+}

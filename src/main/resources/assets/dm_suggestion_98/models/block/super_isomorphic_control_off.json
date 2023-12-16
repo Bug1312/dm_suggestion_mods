@@ -1,0 +1,12 @@
+{
+	"parent":"block/orientable",
+	"textures":{
+		"particle":"minecraft:block/smooth_stone",
+		"down":"dalekmod:block/fault_locator_bottom",
+		"up":"dm_suggestion_98:block/isomorphic_control_top_off",
+		"north":"dm_suggestion_98:block/super_isomorphic_control_front_off",
+		"east":"dm_suggestion_98:block/isomorphic_control_side_off",
+		"south":"dm_suggestion_98:block/isomorphic_control_side_off",
+		"west":"dm_suggestion_98:block/isomorphic_control_side_off"
+	}
+}
