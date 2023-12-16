@@ -1,0 +1,7 @@
+{
+	"block.dalek_button":{
+		"category":"block",
+		"subtitle":"subtitles.block.button.click",
+		"sounds":[{"name":"dalekmod:entity/sonic_epsilon","stream":false}]
+	}
+}

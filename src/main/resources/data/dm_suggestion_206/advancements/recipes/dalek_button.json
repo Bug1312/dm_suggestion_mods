@@ -1,0 +1,32 @@
+{
+	"parent":"minecraft:recipes/root",
+	"criteria":{
+		"has_particle":{
+			"trigger":"minecraft:inventory_changed",
+			"conditions":{
+				"items":[
+					{
+						"tag":"forge:gems/crystaline"
+					}
+				]
+			}
+		},
+		"has_the_recipe":{
+			"trigger":"minecraft:recipe_unlocked",
+			"conditions":{
+				"recipe":"dm_suggestion_206:dalek_button"
+			}
+		}
+	},
+	"requirements":[
+		[
+			"has_particle",
+			"has_the_recipe"
+		]
+	],
+	"rewards":{
+		"recipes":[
+			"dm_suggestion_206:dalek_button"
+		]
+	}
+}

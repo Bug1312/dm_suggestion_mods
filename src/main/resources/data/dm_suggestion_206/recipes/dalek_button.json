@@ -1,0 +1,18 @@
+{
+	"type":"minecraft:crafting_shaped",
+	"pattern":[
+		"C",
+		"S"
+	],
+	"key":{
+		"S":{
+			"item":"minecraft:stone"
+		},
+		"C":{
+			"tag":"forge:gems/crystaline"
+		}
+	},
+	"result":{
+		"item":"dm_suggestion_206:dalek_button"
+	}
+}

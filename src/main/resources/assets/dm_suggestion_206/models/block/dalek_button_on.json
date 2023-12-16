@@ -1,0 +1,8 @@
+{
+	"credit":"Made by Berenvonbaggins",
+	"parent":"dm_suggestion_206:block/dalek_button",
+	"textures":{
+		"0":"dm_suggestion_206:block/panel_on",
+		"particle":"dm_suggestion_206:block/panel_on"
+	}
+}
