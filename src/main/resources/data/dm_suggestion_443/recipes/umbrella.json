@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		" S ",
+		"WWW"
+	],
+	"key": {
+		"S": {
+			"item": "dalekmod:wooden_cane"
+		},
+		"W": {
+			"tag": "minecraft:wool"
+		}
+	},
+	"result": {
+		"item": "dm_suggestion_443:umbrella",
+		"count": 1
+	}
+}
