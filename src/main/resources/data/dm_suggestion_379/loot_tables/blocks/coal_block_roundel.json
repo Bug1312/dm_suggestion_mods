@@ -1,0 +1,1 @@
+{"type":"minecraft:block","pools":[{"rolls":1,"entries":[{"type":"minecraft:item","name":"dm_suggestion_379:coal_block_roundel"}],"conditions":[{"condition":"minecraft:survives_explosion"}]}]}
