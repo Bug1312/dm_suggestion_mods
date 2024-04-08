@@ -1,3 +1,13 @@
 {
-	"data_writer.dm_suggestion_205.chameleon.success": "Exterior added to module"
+	"data_writer.dm_suggestion_205.chameleon.success_add": "Exterior added to module",
+	"data_writer.dm_suggestion_205.chameleon.success_remove": "Exterior removed from module",
+	"data_writer.dm_suggestion_205.chameleon.missing_args": "Exterior name missing",
+	"data_writer.dm_suggestion_205.chameleon.locked": "Exterior not unlocked",
+	"data_writer.dm_suggestion_205.chameleon.invalid_exterior": "Exterior name is invalid",
+	"data_writer.dm_suggestion_205.chameleon.invalid_skin": "Skin number is invalid",
+	"data_writer.dm_suggestion_205.chameleon.no_exterior": "Module does not contain exterior",
+	"data_writer.dm_suggestion_205.chameleon.not_unlocked": "Exterior is not unlocked",
+	"data_writer.dm_suggestion_205.chameleon.no_cartridge": "No data cartridge inserted",
+	"data_writer.dm_suggestion_205.chameleon.invalid_cartridge": "This cartrige does not support this feature",
+	"data_writer.dm_suggestion_205.chameleon.options": "Enter option:"
 }
