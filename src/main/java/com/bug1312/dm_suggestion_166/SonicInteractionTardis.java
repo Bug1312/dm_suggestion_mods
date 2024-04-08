@@ -1,4 +1,4 @@
-// Copyright 2023 Bug1312 (bug@bug1312.com)
+// Copyright 2024 Bug1312 (bug@bug1312.com)
 
 package com.bug1312.dm_suggestion_166;
 
@@ -23,6 +23,8 @@ import net.minecraft.world.World;
 import net.minecraft.world.server.ServerWorld;
 
 public class SonicInteractionTardis implements DMSonicRegistry.ISonicInteraction {
+
+	private static final long serialVersionUID = 162236465825145819L;
 
 	@Override
 	public void interact(World world, PlayerEntity player, ItemStack stack, Object entityOrPos) {

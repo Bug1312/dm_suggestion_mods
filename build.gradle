@@ -5,9 +5,11 @@ buildscript {
 	}
 	dependencies {
 		classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '5.1.+', changing: true
+		classpath 'org.spongepowered:mixingradle:0.7.+'
 	}
 }
 apply plugin: 'net.minecraftforge.gradle'
+apply plugin: 'org.spongepowered.mixin'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
@@ -55,6 +57,11 @@ dependencies {
 // 	implementation fg.deobf("curse.maven:the-dalek-mod-59654:3594060") // 65.0.0
 
 	annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
+}
+
+mixin {
+	add sourceSets.main, 'mixins.dm_suggestion_166.refmap.json'
+	config 'mixins.dm_suggestion_166.json'
 }
 
 jar {

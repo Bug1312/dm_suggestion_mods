@@ -3,7 +3,7 @@ loaderVersion="[30,)"
 license="LGPL-3.0-only"
 [[mods]]
 modId="dm_suggestion_166"
-version="1.0.0"
+version="1.1.0"
 displayName="DM Suggestion #166"
 displayURL="https://github.com/Bug1312/dm_suggestion_mods/tree/mod/166"
 authors="Bug1312"
@@ -26,6 +26,6 @@ description='''A mod that adds in suggestion #166 to Dalek Mod!'''
 [[dependencies.dm_suggestion_166]]
     modId="dalekmod"
     mandatory=true
-    versionRange="[65.1.0,)"
+    versionRange="[69,)"
     ordering="NONE"
     side="BOTH"
