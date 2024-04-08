@@ -1,8 +1,8 @@
-// Copyright 2023 Bug1312 (bug@bug1312.com)
+// Copyright 2024 Bug1312 (bug@bug1312.com)
 
 package com.bug1312.dm_suggestion_55;
 
-import com.swdteam.common.item.GunItem;
+import com.swdteam.common.item.gun.GunItem;
 
 import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.enchantment.Enchantments;

@@ -6,7 +6,7 @@
 
 ## Laser / Gun Quickcharge
 
-This mod adds the quick-change enchanment to all gun/laser weapons (that aren't the cannon) and is based on [suggestion #55](https://discord.com/channels/217396856550981633/273107511400464384/928229699551920138):
+This mod adds the quick-change enchanment to all single-shot gun/laser weapons (that aren't the cannon) and is based on [suggestion #55](https://discord.com/channels/217396856550981633/273107511400464384/928229699551920138):
 > Quick Charge Gunstick
 >
 > Allow the Quick Charge Enchantment to Work on the Dalek Gunstick (Not the Dalek Cannon, I Know that'd be OP as Fuck if so)
@@ -15,6 +15,7 @@ This mod adds the quick-change enchanment to all gun/laser weapons (that aren't 
 
 ### Features
 
-- Added Quick Charge enchantment for `GunItem` based weapons that aren't the cannon
+- Added Quick Charge enchantment for `SingleShotGunItem` based weapons that aren't the cannon
 	- Dalek Gunstick
-	- Desert Eagle
+	- Pistol
+	- U.N.I.T. Pistol

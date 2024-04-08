@@ -3,7 +3,7 @@ loaderVersion="[30,)"
 license="LGPL-3.0-only"
 [[mods]]
 modId="dm_suggestion_55"
-version="1.0.0"
+version="1.1.0"
 displayName="DM Suggestion #55"
 displayURL="https://github.com/Bug1312/dm_suggestion_mods/tree/mod/55"
 authors="Bug1312"
@@ -26,6 +26,6 @@ description='''A mod that adds in suggestion #55 to Dalek Mod!'''
 [[dependencies.dm_suggestion_55]]
     modId="dalekmod"
     mandatory=true
-    versionRange="[68,)"
+    versionRange="[69,)"
     ordering="NONE"
     side="BOTH"

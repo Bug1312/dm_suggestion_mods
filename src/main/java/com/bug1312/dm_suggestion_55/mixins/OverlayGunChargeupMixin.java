@@ -1,4 +1,4 @@
-// Copyright 2023 Bug1312 (bug@bug1312.com)
+// Copyright 2024 Bug1312 (bug@bug1312.com)
 
 package com.bug1312.dm_suggestion_55.mixins;
 
@@ -9,7 +9,7 @@ import org.spongepowered.asm.mixin.injection.Redirect;
 
 import com.bug1312.dm_suggestion_55.ModMain;
 import com.swdteam.client.overlay.OverlayGunChargeup;
-import com.swdteam.common.item.GunItem;
+import com.swdteam.common.item.gun.GunItem;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.item.ItemStack;
@@ -20,7 +20,7 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 @Mixin(OverlayGunChargeup.class)
 public class OverlayGunChargeupMixin {
 
-	@Redirect(method = "render", at = @At(value = "FIELD", target = "Lcom/swdteam/common/item/GunItem;requiredChargeTime:F", ordinal = 0, opcode = Opcodes.GETFIELD), remap = false)
+	@Redirect(method = "render", at = @At(value = "FIELD", target = "Lcom/swdteam/common/item/gun/GunItem;requiredChargeTime:F", ordinal = 0, opcode = Opcodes.GETFIELD), remap = false)
 	private float injected(GunItem item) {
 		Minecraft mc = Minecraft.getInstance();
 		ItemStack stack = mc.player.getUseItem();
