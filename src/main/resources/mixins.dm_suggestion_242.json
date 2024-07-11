@@ -13,6 +13,7 @@
 		"dalekmod.TardisActionListMixin",
 		"dalekmod.StattenheimRemoteItemMixin",
 		"dalekmod.disable.DisableBlocks",
-		"dalekmod.disable.DisableHitboxTile"
+		"dalekmod.disable.DisableHitboxTile",
+		"dalekmod.StateDetectorBlockMixin"
 	]
 }

@@ -5,6 +5,7 @@ package com.bug1312.dm_suggestion_242;
 import java.util.function.Supplier;
 
 import com.bug1312.dm_suggestion_242.lever.SiegeLeverBlock;
+import com.bug1312.dm_suggestion_242.lever.SiegeLeverTileEntity;
 import com.bug1312.dm_suggestion_242.tardis.SiegeTardisBlock;
 import com.bug1312.dm_suggestion_242.tardis.SiegeTardisItem;
 import com.bug1312.dm_suggestion_242.tardis.SiegeTardisTileEntity;
@@ -37,6 +38,7 @@ public class Register {
 	
 	public static final DeferredRegister<TileEntityType<?>> TILE_ENTITIES = DeferredRegister.create(ForgeRegistries.TILE_ENTITIES, ModMain.MOD_ID);
 	public static final RegistryObject<TileEntityType<SiegeTardisTileEntity>> SIEGE_TILE = register(TILE_ENTITIES, "siege_mode_cube", () -> TileEntityType.Builder.of(SiegeTardisTileEntity::new, Register.SIEGE_BLOCK.get()).build(null));
+	public static final RegistryObject<TileEntityType<SiegeLeverTileEntity>> SIEGE_LEVER_TILE = register(TILE_ENTITIES, "siege_lever", () -> TileEntityType.Builder.of(SiegeLeverTileEntity::new, Register.SIEGE_LEVER_BLOCK.get()).build(null));
 
 	public static final TranslationTextComponent SIEGE_ERROR = new TranslationTextComponent(String.format("notice.%s.siege_error", ModMain.MOD_ID));
 	public static final TranslationTextComponent OBSTRUCTION = DMTranslationKeys.TARDIS_UNABLE_TO_LAND;

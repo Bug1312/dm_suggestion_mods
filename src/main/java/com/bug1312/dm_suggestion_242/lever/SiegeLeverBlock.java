@@ -6,8 +6,11 @@ import static net.minecraft.state.properties.BlockStateProperties.HORIZONTAL_FAC
 import static net.minecraft.state.properties.BlockStateProperties.OPEN;
 import static net.minecraft.state.properties.BlockStateProperties.POWERED;
 
+import java.util.Arrays;
 import java.util.Optional;
 import java.util.function.BiFunction;
+
+import javax.annotation.Nullable;
 
 import com.bug1312.dm_suggestion_242.ITardisDataDuck;
 import com.bug1312.dm_suggestion_242.Register;
@@ -20,12 +23,16 @@ import com.swdteam.common.init.DMTardis;
 import com.swdteam.common.tardis.Location;
 import com.swdteam.common.tardis.TardisData;
 import com.swdteam.common.tardis.actions.TardisActionList;
+import com.swdteam.common.tileentity.tardis.PanelHealthUpgrade;
+import com.swdteam.common.tileentity.tardis.TardisPanelTileEntity;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.fluid.Fluids;
+import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.state.StateContainer.Builder;
 import net.minecraft.state.properties.BlockStateProperties;
@@ -205,6 +212,39 @@ public class SiegeLeverBlock extends AbstractRotateableWaterLoggableBlock {
 		}
 		
 		return false;
+	}
+	
+	// Boilerplate for panels
+	public void setPlacedBy(World world, BlockPos pos, BlockState state, @Nullable LivingEntity livingEntity, ItemStack stack) {
+		TileEntity te = world.getBlockEntity(pos);
+		if (te instanceof TardisPanelTileEntity) {
+			TardisPanelTileEntity panel = (TardisPanelTileEntity) te;
+			if (stack.hasTag()) {
+				CompoundNBT nbt = stack.getOrCreateTag();
+				if (nbt.contains("PanelDamage")) panel.setDamage(nbt.getInt("PanelDamage"));
+				if (nbt.contains("PanelDurability")) panel.setDurability(nbt.getInt("PanelDurability"));
+				if (nbt.contains("PanelName")) panel.setName(nbt.getString("PanelName"));
+				if (nbt.contains("PanelCircuit")) {
+					Optional<PanelHealthUpgrade> healthUpgrade = Arrays.stream(PanelHealthUpgrade.values())
+				        .filter(value -> value.id().equalsIgnoreCase(nbt.getString("PanelCircuit"))).findFirst();
+					if (healthUpgrade.isPresent()) panel.setHealthUpgrade(healthUpgrade.get());
+				}
+			}
+
+			TardisData data = DMTardis.getTardisFromInteriorPos(pos);
+			panel.addOrCheckToTardisData(data);
+			data.save();
+		}
+	}
+	
+	@Override
+	public boolean hasTileEntity(BlockState state) {
+		return true;
+	}
+	
+	@Override
+	public TileEntity createTileEntity(BlockState state, IBlockReader world) {
+		return new SiegeLeverTileEntity();
 	}
 
 }
